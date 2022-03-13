@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* body {
+    background-image: url(https://besthqwallpapers.com/Uploads/14-12-2019/115857/thumb2-paws-patterns-creative-footprints-patterns-abstract-backgrounds-dog-footprints.jpg);
+} */
+
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .2);
+    flex-direction: row;
+    border-bottom: 1px white solid;
+    position: fixed;
+    top: 0; 
+    
+}
+
+.nav-bar img {
+    height: 53px;
+}
+
+.nav-bar p {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    padding: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-list {
+    text-align: center;
+}
+
+.nav-list li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-list li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    padding: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all ease 0.5s;
+}
+
+.nav-list li a:hover {
+    background-color: #211b4385;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
