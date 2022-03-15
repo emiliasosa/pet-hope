@@ -329,7 +329,7 @@ b{
 
 .benefits-main-container {
     /* margin-bottom: 150px; */
-    height: 1100px;
+    height: 1050px;
     background-image: url("img/bck.jpg") ;
     border-bottom: solid 0.5px gray;
     
@@ -349,11 +349,12 @@ b{
 
 
 .benefits-card {
-    margin: 50px;
+    margin: 25px;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 10px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(255, 253, 236)
 }
 
 .benefits-card h2{
@@ -368,8 +369,8 @@ b{
 
 .benefits-card:hover {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    background-color: rgb(253, 250, 223)
-    
+    /* background-color: rgb(253, 250, 223) */
+    background-color: white;
 }
 
 .benefits-info {
