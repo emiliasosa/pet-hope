@@ -77,13 +77,21 @@ html {
     height: 920px;
     position: absolute;
     background-image: url("img/2.jpg");
-    animation: entrada 2s ;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-name: entrada;
+    opacity: 0;
+    transform: translateX(1920px);
 }
 
 @keyframes entrada {
-    0% {opacity: 1;}
-    100% {opacity: 0;
-        animation-play-state: paused}
+    0% {transform: translateX(0);
+        opacity: 0;}
+    1%{opacity: 1;}
+    75%{opacity: 1;}
+    99% {opacity: 0;
+        transform: translateX(0);}
+    100% {transform: translateX(-1920px);}
 }
 
 .ttlentrada{
@@ -101,11 +109,12 @@ html {
 
 .entradatext{
     background-color: none;
-    animation: entradacontenido 1.5s infinite alternate  ;
+    animation: entradacontenido 1.2s infinite alternate  ;
 }
 
 @keyframes entradacontenido {
-    0% {}
+    0% {opacity: 1;}
+    40% {opacity: 1;}
     100% {opacity: 0;}
 }
 
@@ -153,6 +162,7 @@ b{
     font-weight: 600;
     color: #6ea5b8;
     animation: btn 2s infinite alternate;
+    cursor: pointer;
 }
 
 @keyframes btn{
