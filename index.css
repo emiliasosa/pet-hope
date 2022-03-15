@@ -405,7 +405,6 @@ b{
 .contacto{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 100px;
     background-image: url(img/bck2.jpg);
 }
 
