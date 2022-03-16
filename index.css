@@ -10,11 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* body {
-    background-image: url(https://besthqwallpapers.com/Uploads/14-12-2019/115857/thumb2-paws-patterns-creative-footprints-patterns-abstract-backgrounds-dog-footprints.jpg);
-} */
-
-
+/*  NAVBAR */
 .nav-bar {
     width: 100%;
     display: flex;
@@ -69,30 +65,33 @@ html {
     text-decoration: underline;
 }
 
+/*  EFECTO CARGA */
+
 .entrada{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1920px;
-    height: 920px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     background-image: url("img/2.jpg");
     animation-duration: 6s;
     animation-iteration-count: 1;
     animation-name: entrada;
-    opacity: 0;
     transform: translateX(1920px);
 }
 
 @keyframes entrada {
     0% {transform: translateX(0);
-        opacity: 0;}
+        opacity: 1;}
     1%{opacity: 1;}
     75%{opacity: 1;}
     99% {opacity: 0;
         transform: translateX(0);}
     100% {transform: translateX(-1920px);}
 }
+
+/*  TEXTO + ANIMACION */
 
 .ttlentrada{
     text-align: center;
@@ -118,26 +117,33 @@ html {
     100% {opacity: 0;}
 }
 
-
+/*  HERO */
 .maincontainer{
     background-image: url("img/1.jpg");
-    width: 1920px;
-    height: 920px;
+    width: 100%;
+    height: 100vh;
     margin: 0;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .cont{
+    grid-column: 1/3;
+    align-self: center;
     margin-left: 100px;
     width: 800px;
     height: 500px;
 }
 
+/*  TITULO - HERO */
+
 .ttlmain{
     font-size: 150px;
     color: #6ea5b8;
 }
+
+/*  DESCRIPCION - HERO */
+
 b{
     color: #6ea5b8
 }
@@ -148,6 +154,7 @@ b{
     margin-bottom: 50px;
 }
 
+/*  BOTON + ANIMACION - HERO */
 
 .btn2{
     width: 90%;
@@ -173,10 +180,29 @@ b{
         border: 2px solid #fff;}
 }
 
+/*  IMAGEN - HERO */
+
+.imghero{
+    grid-column: 3/4;
+    justify-content: end;
+    display: flex;
+   
+}
+
+.imghero img{
+    width: 1100px;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+/*  ADOPCION */
+
 #adopcion{
-    background-image: url("img/bck.jpg");
+    background-image: url("img/bck3.jpg");
     padding: 5px 0 20px ;
 }
+
+/*  TITULO ADOPCION - ADOPCION*/
 
 .containermax{
     display: flex;
@@ -193,6 +219,8 @@ b{
     position: absolute;
 }
 
+/*  ANIMACION TITULO  - ADOPCION*/
+
 .tituloscontainer{
     transform: translateY(-30px);
     animation: txt 5s infinite alternate  ;
@@ -207,6 +235,8 @@ b{
     100% { transform: translateY(-95px);}
 }
 
+/*  TITULO FIJO - ADOPCION */
+
 .ttl{
     display: block;
     margin-left: 25px;
@@ -217,16 +247,18 @@ b{
     font-size: 60px;
 }
 
+/*  TEXTO MOVIMIENTO - ADOPCION */
+
 .esp{
     color: #ffffff;
     width: 300px;
     -webkit-text-stroke: 2px #83cee7;
     letter-spacing: 10px;
     font-size: 60px;
-    animation: entrada 2s  infinite alternate;
     overflow: hidden;
 }
 
+/*  CANTIDAD DE CAJAS - ADOPCION */
 
 .adopcion{
     margin: 30px;
@@ -246,11 +278,15 @@ b{
     border-radius: 30px;
 }
 
+/*  EFECTO IMAGEN ADOPTAR - ADOPCION */
+
 .imgrid:hover{
     opacity: 1;
     filter: saturate(200%) ;
     filter: contrast(120%);
 }
+
+/*  POSICION DE CAJAS - ADOPCION*/
 
 .item{
     position: relative;
@@ -278,6 +314,8 @@ b{
     grid-column-start: span 2;
 }
 
+/*  CAJA INFORMACION - ADOPCION*/
+
 .caja{
     position: absolute;
     margin-bottom: -30px;
@@ -304,6 +342,8 @@ b{
     font-size: 18px;
 }
 
+/*  BOTON ADOPTAR - ADOPCION*/
+
 .btn{
     width: 90%;
     margin: 0 auto;
@@ -327,6 +367,8 @@ b{
     
 }
 
+/*  BENEFICIOS */
+
 .benefits-main-container {
     /* margin-bottom: 150px; */
     height: 1050px;
@@ -345,8 +387,6 @@ b{
     /* background-image: url("./assets/benefits_background.png"); */
     
 }
-
-
 
 .benefits-card {
     margin: 25px;
@@ -403,11 +443,15 @@ b{
 
 }
 
+/*  CONTACTO */
+
 .contacto{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-image: url(img/bck2.jpg);
 }
+
+/*  TITULO - CONTACTO*/
 
 .ttlcontacto{
     font-size: 40px;
@@ -418,13 +462,16 @@ b{
     letter-spacing: 10px;
 }
 
+/*  IMAGEN - CONTACTO*/
+
 .imgcontacto{
     object-fit: cover;
     width: 750px;
 }
 
+/*  FORMULARIO CONTACTO - CONTACTO*/
+
 .user{
-    
     align-self: end;
     grid-column: 4 / 4;
     display: flex;
@@ -470,6 +517,8 @@ input:focus{
     box-shadow:inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255,255,255,.4);
 }
 
+/*  BOTON FORMULARIO - CONTACTO*/
+
 .submit{
     background-color: #6ea5b8;
     color: aliceblue;
@@ -486,6 +535,8 @@ input:focus{
     letter-spacing: 10px;
     transition: 1.5s;
 }
+
+/*  FOOTER */
 
 footer {
     display: flex;
