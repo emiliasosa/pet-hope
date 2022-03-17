@@ -125,6 +125,7 @@ html {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    border-bottom: solid 2px gray;
 }
 
 .cont{
@@ -200,6 +201,8 @@ b{
 #adopcion{
     background-image: url("img/bck3.jpg");
     padding: 5px 0 20px ;
+    height: 100vh;
+    border-bottom: solid 2px gray;
 }
 
 /*  TITULO ADOPCION - ADOPCION*/
@@ -373,6 +376,7 @@ b{
     height: 1050px;
     background-image: url("img/bck.jpg") ;
     border-bottom: solid 0.5px gray;
+    height: 100vh;
     
 }
 
@@ -442,6 +446,7 @@ b{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-image: url(img/bck2.jpg);
+    height: 100vh;
 }
 
 /*  TITULO - CONTACTO*/
