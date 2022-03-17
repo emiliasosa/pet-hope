@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /*  NAVBAR */
 .nav-bar {
     width: 100%;
@@ -20,7 +21,7 @@ html {
     border-bottom: 1px white solid;
     position: fixed;
     top: 0; 
-    
+    z-index: 10;
 }
 
 .nav-bar img {
@@ -386,6 +387,7 @@ b{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+    
 }
 
 .flip-card {
@@ -444,6 +446,7 @@ b{
     height: 170px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;  
+    
 }
 
 .flip-card-front h2{
