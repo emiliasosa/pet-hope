@@ -381,29 +381,80 @@ b{
     margin: 50px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-.benefits-card {
-    margin: 25px;
-    padding: 30px;
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 10px;
-    background-color: rgb(245, 240, 233)
+    border-radius: 15px;
+}
+      
+    
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+      
+      
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+}
+      
+      
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+      
+      
+.flip-card-front {
+    background-color: rgb(245, 240, 233);
+    color: rgb(212, 162, 111);
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
 }
 
-.benefits-card h2{
-    font-size: 2.2rem;
-    margin-bottom: 25px;
+.flip-card-front img {
+    width: 100%;
+    height: 170px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;  
 }
 
-.benefits-card p{
-    font-size: 1.8rem;
-   
-}
-
-.benefits-card:hover {
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+.flip-card-front h2{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}   
+     
+.flip-card-back {
     background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    font-size: 2.2rem;
+    padding: 20px;
+        
 }
 
 .benefits-info {
@@ -422,19 +473,6 @@ b{
     font-size: 2.5rem;
 }
 
-
-.benefits-card:hover {
-    animation-name: animate-pop;
-    animation-duration: 0.5s;
-}
-  
-@keyframes animate-pop {
-
-    50% {
-        transform: scale(1.1);
-    }
-
-}
 
 /*  CONTACTO */
 
@@ -633,6 +671,7 @@ footer {
     color: rgb(2, 117, 117);
     transform: scale(1.2);
     }
+
 
 
  
