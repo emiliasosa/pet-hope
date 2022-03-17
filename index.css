@@ -80,6 +80,7 @@ html {
     animation-iteration-count: 1;
     animation-name: entrada;
     transform: translateX(1920px);
+    z-index: 11;
 }
 
 @keyframes entrada {
