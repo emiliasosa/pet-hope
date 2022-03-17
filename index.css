@@ -370,7 +370,6 @@ b{
 /*  BENEFICIOS */
 
 .benefits-main-container {
-    /* margin-bottom: 150px; */
     height: 1050px;
     background-image: url("img/bck.jpg") ;
     border-bottom: solid 0.5px gray;
@@ -379,13 +378,9 @@ b{
 
 .benefits-cards-container {
     width: 90%;
-    /* height: 700px; */
     margin: 50px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* background-image: url("./assets/benefits_background.png"); */
-    
 }
 
 .benefits-card {
@@ -393,8 +388,7 @@ b{
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 10px;
-    /* background-color: white; */
-    background-color: rgb(255, 253, 236)
+    background-color: rgb(245, 240, 233)
 }
 
 .benefits-card h2{
@@ -409,7 +403,6 @@ b{
 
 .benefits-card:hover {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    /* background-color: rgb(253, 250, 223) */
     background-color: white;
 }
 
@@ -426,7 +419,7 @@ b{
 }
 
 .benefits-info p {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
 
 
@@ -539,7 +532,108 @@ input:focus{
 /*  FOOTER */
 
 footer {
+    width: 100%;
+    margin: 0px;
+    background-image: url("./img/bck.jpg");
+    height: 350px;
+    padding: 40px 80px;
+    
+}
+
+.top-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.right-top {
     display: flex;
     justify-content: center;
+    gap: 150px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.right-top div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.right-top h3 {
+    font-size: 2.8rem;
+    
+}
+.right-top a {
+    color: rgb(7, 7, 41);
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    
+}
+
+.right-top a:hover {
+    color: rgb(122, 122, 122);
+}
+
+.bottom-footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    border-top: solid 1px rgb(212, 212, 212);
+}
+
+.left-bottom {
+    margin-left: 120px;
+
+}
+
+.left-bottom p, .right-bottom p {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    
+}
+
+.right-bottom {
+    width: 30%;
+    margin-right: 240px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-bottom a {
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+
+.icons-container {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    width: 80%;
+    margin-top: 40px;
+    justify-content: right;
     align-items: center;
 }
+
+.icons-container a {
+    text-decoration: none;
+}
+
+.icons-container i {
+    font-size: 4rem;
+    color: #6ea5b8;;
+}
+
+.icons-container i:hover {
+    color: rgb(2, 117, 117);
+    transform: scale(1.2);
+}
+
+
+ 
+
